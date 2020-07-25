@@ -1,0 +1,248 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+body {
+  background-color: #ecf0f1;
+}
+.jumbotron {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 100px;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+}
+.title__jumbotron {
+  color: #1abc9c;
+}
+.sub__title-jumbotron {
+  color: #a39f9f;
+}
+header {
+  display: inline;
+}
+.nav__menu-item {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #777777;
+  transition-duration: 0.2s;
+  font-size: 18px;
+}
+.nav__menu-item:hover {
+  transition-duration: 0.2s;
+  background-color: #1abc9c;
+  color: white;
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.banner {
+  display: flex;
+  padding: 0 100px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ecf0f1;
+  height: 600px;
+}
+.banner__title {
+  font-size: 38px;
+  color: black;
+}
+.banner__description {
+  font-size: 18px;
+  color: black;
+  margin-top: 20px;
+}
+img {
+  width: 90%;
+}
+.banner__image {
+  text-align: right;
+}
+.banner__button-container {
+  margin-top: 50px;
+}
+.banner__buy-button {
+  background-color: #1abc9c;
+  padding: 10px 25px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+  margin-right: 20px;
+  border-radius: 5px;
+}
+.banner__buy-button:hover {
+  background-color: #7fc2c7;
+}
+.banner2__title {
+  text-align: center;
+  color: black;
+  padding-top: 20px;
+}
+.container__card {
+  display: flex;
+  margin: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.card img {
+  height: 250px;
+  width: 100%;
+}
+.card h3 {
+  text-align: center;
+}
+.card {
+  margin: 10px;
+  border-radius: 15px;
+  padding: 40px;
+  height: 100%;
+  width: 377px;
+  background-color: #1abc9c;
+  align-items: center;
+  color: #fff;
+}
+.parallax {
+  background-image: url("../assets/image/parallax.jpg");
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+.banner2 {
+  color: white;
+  font-weight: 200px;
+}
+.banner3 {
+  display: flex;
+  padding: 0 100px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  height: 600px;
+}
+.banner4 {
+  justify-content: space-between;
+  align-items: center;
+}
+aside {
+  top: 0;
+  text-align: center;
+  min-height: 420px;
+  padding: 50px 0;
+}
+aside img {
+  margin-top: 20px;
+  width: 300px;
+  height: 300px;
+  border-radius: 8px;
+}
+aside p {
+  margin: 20px 20%;
+}
+footer {
+  padding: 20px;
+  color: white;
+  background-color: #1abc9c;
+}
+footer p {
+  text-align: center;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+li {
+  display: inline-flex;
+}
+a {
+  text-decoration: none;
+  color: darkgray;
+  padding: 10px;
+  transition: all 0.3s ease-in-out;
+  border-bottom: 1px solid transparent;
+}
+.banner4__tab-pane {
+  display: none;
+}
+.banner4__tab-pane.active {
+  display: block;
+}
+#banner4__nav-tab {
+  text-align: center;
+}
+.buy1 {
+  align-items: center;
+  margin-bottom: 50px;
+}
+#about {
+  background-color: #fff;
+}
+.banner__buy-button2 {
+  background-color: #1abc9c;
+  padding: 10px 25px;
+  text-decoration: none;
+  background-color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+  color: black;
+}
+.banner__buy-button2:hover {
+  background-color: #7fc2c7;
+}
+/* media query */
+@media screen and (max-width: 880px) {
+  .jumbotron {
+    display: inline-block;
+  }
+  .title__jumbotron {
+    text-align: center;
+  }
+  nav {
+    background-color: #1abc9c;
+    text-align: left;
+  }
+  .nav__menu-item {
+    display: none;
+  }
+  .banner {
+    padding: 50px 20px;
+    align-items: center;
+    height: 100%;
+  }
+  .banner__title {
+    font-size: 28px;
+    color: black;
+  }
+  .banner__description {
+    font-size: 16px;
+    color: black;
+    margin-top: 10px;
+  }
+  .banner__image {
+    display: none;
+  }
+  .container__card {
+    display: block;
+  }
+  .card {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+    padding: 20px;
+    height: 100%;
+    width: 380px;
+    background-color: #1abc9c;
+    align-items: center;
+    color: #fff;
+    font-size: 14px;
+  }
+}
